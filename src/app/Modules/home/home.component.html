@@ -1,0 +1,57 @@
+<div class="roe text-center mt-5">
+  <h1 class="mb-4">Hi there, Welcome to NxtOasis</h1>
+  <ul class="list-unstyled mb-4">
+    <li><i class="bi bi-check-circle"></i> Do you want your own customized Shirt/T-Shirt?</li>
+    <li><i class="bi bi-check-circle"></i> We're here for you! Customize your Shirt/T-Shirt and upload your design.</li>
+    <li><i class="bi bi-check-circle"></i> We guarantee delivery within a week with outstanding quality.</li>
+  </ul>
+  <div class="button-group mb-4">
+    <button class="btn btn-success btn-lg">Try now</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-5 col-md-4">
+    <div class="card-horizontal">
+      <img src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp" alt="Classic Utility Jacket" class="product-image-horizontal">
+      <div class="card-content-horizontal">
+        <h2>Classic Utility Jacket</h2>
+        <p class="price">700.00</p>
+        <p>In stock</p>
+        <div class="sizes">
+          <button class="size" data-size="XS">XS</button>
+          <button class="size" data-size="S">S</button>
+          <button class="size" data-size="M">M</button>
+          <button class="size" data-size="L">L</button>
+          <button class="size" data-size="XL">XL</button>
+        </div>
+        <div class="quantity">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1">
+        </div>
+        <button class="buy-now">Buy now</button>
+        <button class="add-to-bag">Add to bag</button>
+        <p class="shipping-info">Free shipping on all continental US orders.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // JavaScript to handle size selection
+  document.addEventListener('DOMContentLoaded', function() {
+    const sizeButtons = document.querySelectorAll('.sizes button.size');
+
+    sizeButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Remove 'selected' class from all size buttons
+        sizeButtons.forEach(btn => btn.classList.remove('selected'));
+
+        // Add 'selected' class to the clicked button
+        this.classList.add('selected');
+      });
+    });
+  });
+</script>
+
+

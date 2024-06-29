@@ -1,0 +1,37 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #273542;
+    color: #fff;
+    height: 80px;
+  }
+  
+  .logo {
+    grid-column: span 4;
+    text-align: center;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    grid-column: span 8;
+    text-align: left;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-size: 25px;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #8d9196;
+  }
+  
